@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bespoke Luxury Kitchens for Bengaluru Villas — Cabinets & Me</title>
+<meta name="description" content="Your kitchen should be the most considered room in your villa. Cabinets and Me crafts fully bespoke kitchens designed around how you live.">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --teal:#0D5F6B;--teal-d:#093f49;--teal-l:#e8f4f6;--teal-xl:#f2fafb;
+  --gold:#FFAF31;--gold-d:#c98a00;
+  --ink:#111111;--ink-2:#3a3a3a;--ink-3:#6a6a6a;
+  --off:#FAFAF8;--white:#ffffff;--line:#E2DDD6;
+  --r:2px;
+  --nav:64px;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--off);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.6;}
+img{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+
+/* ── NAV ── */
+.cnm-nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  height:var(--nav);background:rgba(250,250,248,0.96);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 48px;
+}
+.cnm-nav__logo img{height:38px;width:auto;}
+.cnm-nav__cta{
+  background:var(--teal);color:#fff;
+  padding:11px 24px;border-radius:var(--r);
+  font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  transition:background .2s;cursor:pointer;border:none;
+}
+.cnm-nav__cta:hover{background:var(--teal-d);}
+
+/* ── HERO SPLIT ── */
+.hero-split{
+  margin-top:var(--nav);
+  display:grid;grid-template-columns:1fr 480px;
+  min-height:calc(100vh - var(--nav));
+}
+.hero-img-side{position:relative;overflow:hidden;background:#0a2a30;}
+.hero-img-side img{
+  width:100%;height:100%;object-fit:cover;
+  opacity:.75;transition:opacity .4s;
+}
+.hero-img-side:hover img{opacity:.85;}
+.hero-img-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to right, rgba(9,63,73,.55) 0%, rgba(9,63,73,.1) 100%);
+}
+.hero-img-caption{
+  position:absolute;bottom:36px;left:36px;right:36px;
+}
+.hero-img-caption__tag{
+  display:inline-block;
+  background:rgba(255,175,49,.15);border:1px solid rgba(255,175,49,.4);
+  color:var(--gold);font-size:10px;font-weight:500;letter-spacing:.14em;
+  text-transform:uppercase;padding:5px 12px;border-radius:var(--r);
+  margin-bottom:14px;
+}
+.hero-img-caption__name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;font-weight:400;color:#fff;margin-bottom:4px;
+}
+.hero-img-caption__type{font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.06em;}
+
+/* ── HERO FORM PANEL ── */
+.hero-form-panel{
+  background:#fff;border-left:1px solid var(--line);
+  display:flex;flex-direction:column;justify-content:center;
+  padding:52px 44px;overflow-y:auto;
+}
+.hero-form-panel__eyebrow{
+  font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold-d);margin-bottom:14px;
+}
+.hero-form-panel__headline{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(30px,3.2vw,42px);font-weight:400;line-height:1.15;
+  color:var(--ink);margin-bottom:14px;letter-spacing:-.01em;
+}
+.hero-form-panel__headline em{font-style:italic;color:var(--teal);}
+.hero-form-panel__sub{
+  font-size:14px;font-weight:300;color:var(--ink-3);
+  line-height:1.75;margin-bottom:28px;
+}
+
+/* ── FORM ── */
+.cnm-form{display:flex;flex-direction:column;gap:13px;}
+.cnm-form__row{display:grid;grid-template-columns:1fr 1fr;gap:13px;}
+.cnm-form__group{display:flex;flex-direction:column;gap:5px;position:relative;}
+.cnm-form__label{
+  font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-2);
+}
+.cnm-form__input,.cnm-form__select{
+  padding:13px 14px;
+  border:1.5px solid var(--line);border-radius:var(--r);
+  font-family:'DM Sans',sans-serif;font-size:14px;color:var(--ink);
+  background:var(--off);outline:none;
+  transition:border-color .2s,background .2s;
+  appearance:none;-webkit-appearance:none;width:100%;
+}
+.cnm-form__input:focus,.cnm-form__select:focus{
+  border-color:var(--teal);background:#fff;
+}
+.cnm-form__input.error,.cnm-form__select.error{border-color:#dc2626;background:#fff8f8;}
+.cnm-form__select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236a6a6a' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;
+  padding-right:38px;cursor:pointer;
+}
+.cnm-form__error{
+  font-size:11px;color:#dc2626;margin-top:2px;
+  display:none;align-items:center;gap:4px;
+}
+.cnm-form__error.show{display:flex;}
+.cnm-form__error svg{flex-shrink:0;}
+
+/* Phone field — India prefix */
+.phone-wrap{position:relative;}
+.phone-wrap .cnm-form__input{padding-left:52px;}
+.phone-prefix{
+  position:absolute;left:14px;top:50%;transform:translateY(-50%);
+  font-size:14px;color:var(--ink-3);pointer-events:none;
+  display:flex;align-items:center;gap:4px;
+}
+
+/* Submit */
+.cnm-form__submit{
+  background:var(--teal);color:#fff;
+  padding:15px;border:none;border-radius:var(--r);
+  font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;
+  cursor:pointer;transition:background .2s;position:relative;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.cnm-form__submit:hover{background:var(--teal-d);}
+.cnm-form__submit:disabled{background:var(--ink-3);cursor:not-allowed;}
+.spinner{
+  width:16px;height:16px;border:2px solid rgba(255,255,255,.4);
+  border-top-color:#fff;border-radius:50%;
+  animation:spin .7s linear infinite;display:none;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+.cnm-form__submit.loading .spinner{display:block;}
+.cnm-form__submit.loading .btn-text{display:none;}
+
+/* Divider */
+.form-or{display:flex;align-items:center;gap:10px;margin:2px 0;}
+.form-or::before,.form-or::after{content:'';flex:1;height:1px;background:var(--line);}
+.form-or span{font-size:11px;color:var(--ink-3);}
+
+/* WhatsApp */
+.cnm-wa-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:13px;border:1.5px solid #25D366;border-radius:var(--r);
+  background:#f0fdf4;color:#166534;
+  font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;
+  letter-spacing:.06em;text-transform:uppercase;
+  transition:background .2s;
+}
+.cnm-wa-btn:hover{background:#dcfce7;}
+.cnm-wa-btn svg{flex-shrink:0;}
+
+.form-note{font-size:10px;color:var(--ink-3);text-align:center;margin-top:4px;}
+
+/* Success */
+.form-success{
+  display:none;flex-direction:column;align-items:center;
+  text-align:center;padding:32px 16px;
+}
+.form-success.show{display:flex;}
+.success-ring{
+  width:60px;height:60px;border-radius:50%;
+  background:var(--teal-l);display:flex;align-items:center;justify-content:center;
+  margin-bottom:20px;
+}
+.success-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:28px;color:var(--teal);margin-bottom:10px;
+}
+.success-sub{font-size:14px;color:var(--ink-3);line-height:1.7;max-width:300px;}
+
+/* ── TRUST BAR ── */
+.trust-bar{
+  background:var(--teal-d);
+  display:flex;align-items:center;justify-content:center;
+  gap:0;flex-wrap:wrap;
+}
+.trust-item{
+  display:flex;align-items:center;gap:10px;
+  padding:22px 36px;border-right:1px solid rgba(255,255,255,.12);
+}
+.trust-item:last-child{border-right:none;}
+.trust-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:30px;font-weight:500;color:var(--gold);line-height:1;
+}
+.trust-lbl{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;max-width:90px;}
+
+/* ── GENERIC SECTION ── */
+.cnm-section{padding:88px 48px;max-width:1200px;margin:0 auto;}
+.cnm-section--wide{padding:88px 48px;}
+.section-eye{
+  font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold-d);margin-bottom:12px;
+}
+.section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(26px,3vw,40px);font-weight:400;line-height:1.2;
+  color:var(--ink);
+}
+.section-sub{
+  font-size:15px;font-weight:300;color:var(--ink-3);
+  line-height:1.8;max-width:560px;margin-top:14px;
+}
+
+/* ── PROCESS STEPS ── */
+.process-steps{
+  display:grid;grid-template-columns:repeat(5,1fr);
+  gap:0;margin-top:52px;position:relative;
+}
+.process-steps::before{
+  content:'';position:absolute;
+  top:26px;left:10%;right:10%;height:1px;background:var(--line);z-index:0;
+}
+.process-step{
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;padding:0 12px;position:relative;z-index:1;
+}
+.process-dot{
+  width:52px;height:52px;border-radius:50%;
+  background:#fff;border:1.5px solid var(--teal);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:18px;
+  font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:500;color:var(--teal);
+}
+.process-label{font-size:13px;font-weight:500;color:var(--ink);margin-bottom:6px;}
+.process-desc{font-size:12px;color:var(--ink-3);line-height:1.6;}
+
+/* ── PROJECTS MASONRY ── */
+.proj-grid{display:grid;gap:3px;}
+.proj-grid--3{grid-template-columns:repeat(3,1fr);}
+.proj-grid--2{grid-template-columns:1fr 1fr;}
+.proj-grid--feature{grid-template-columns:3fr 2fr;}
+.proj-card{
+  position:relative;overflow:hidden;
+  background:#0a2a30;
+}
+.proj-card img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .6s ease,opacity .3s;opacity:.78;
+}
+.proj-card:hover img{transform:scale(1.04);opacity:.92;}
+.proj-info{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(transparent,rgba(7,40,47,.9));
+  padding:28px 20px 18px;
+}
+.proj-info__name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:17px;color:#fff;margin-bottom:3px;
+}
+.proj-info__type{font-size:10px;color:rgba(255,175,49,.85);letter-spacing:.1em;text-transform:uppercase;}
+
+/* ── FEATURE CARDS ── */
+.feat-grid{display:grid;gap:2px;}
+.feat-grid--4{grid-template-columns:repeat(4,1fr);}
+.feat-grid--3{grid-template-columns:repeat(3,1fr);}
+.feat-grid--2{grid-template-columns:repeat(2,1fr);}
+.feat-card{background:#fff;padding:36px 28px;border:1px solid var(--line);transition:border-color .2s,box-shadow .2s;}
+.feat-card:hover{border-color:var(--teal);box-shadow:0 4px 24px rgba(13,95,107,.08);}
+.feat-card__icon{width:40px;height:40px;color:var(--teal);margin-bottom:16px;}
+.feat-card__title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--ink);margin-bottom:8px;}
+.feat-card__desc{font-size:13px;color:var(--ink-3);line-height:1.7;}
+.feat-card__sub{font-size:11px;color:var(--teal);font-weight:500;margin-top:12px;padding-top:12px;border-top:1px solid var(--line);}
+
+/* ── CERT + PRESS BARS ── */
+.cert-bar,.press-bar{
+  background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:32px 48px;
+}
+.cert-bar__inner,.press-bar__inner{
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;
+}
+.cert-bar__lbl,.press-bar__lbl{
+  font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);
+}
+.cert-bar__logos,.press-bar__logos{display:flex;gap:28px;align-items:center;flex-wrap:wrap;justify-content:center;}
+.cert-bar__logos img,.press-bar__logos img{
+  height:36px;width:auto;object-fit:contain;
+  filter:grayscale(40%);opacity:.75;transition:opacity .2s,filter .2s;
+}
+.cert-bar__logos img:hover,.press-bar__logos img:hover{filter:grayscale(0);opacity:1;}
+
+/* ── BOTTOM CTA ── */
+.bottom-cta{background:var(--ink);padding:80px 48px;text-align:center;}
+.bottom-cta__title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(28px,3.5vw,48px);font-weight:300;
+  color:#fff;line-height:1.2;margin-bottom:14px;
+}
+.bottom-cta__title em{font-style:italic;color:var(--gold);}
+.bottom-cta__sub{font-size:15px;color:rgba(255,255,255,.5);max-width:480px;margin:0 auto 40px;line-height:1.75;}
+.bottom-cta__actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.btn-gold{
+  background:var(--gold);color:var(--ink);
+  padding:15px 36px;border:none;border-radius:var(--r);
+  font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;
+  cursor:pointer;text-decoration:none;transition:background .2s;
+}
+.btn-gold:hover{background:var(--gold-d);}
+.btn-ghost{
+  background:transparent;color:rgba(255,255,255,.8);
+  padding:14px 36px;border:1.5px solid rgba(255,255,255,.25);
+  border-radius:var(--r);font-family:'DM Sans',sans-serif;font-size:13px;
+  font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:none;transition:border-color .2s;
+}
+.btn-ghost:hover{border-color:rgba(255,255,255,.7);}
+
+/* ── FOOTER ── */
+.cnm-footer{
+  background:#0d0d0d;padding:28px 48px;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
+}
+.cnm-footer__brand img{height:32px;width:auto;opacity:.8;}
+.cnm-footer__addr{font-size:11px;color:rgba(255,255,255,.4);line-height:1.7;}
+.cnm-footer__phone{font-size:13px;color:rgba(255,255,255,.6);}
+
+/* ── STICKY WA (MOBILE) ── */
+.sticky-wa{
+  display:none;position:fixed;bottom:20px;right:20px;z-index:300;
+  background:#25D366;border-radius:50%;
+  width:56px;height:56px;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,.45);
+}
+
+/* ── DARK HERO VARIANT ── */
+.hero-dark{
+  margin-top:var(--nav);
+  background:linear-gradient(135deg,#061e24 0%,#0a3540 55%,var(--teal) 100%);
+  min-height:calc(100vh - var(--nav));
+  display:flex;align-items:center;
+  padding:60px 48px;position:relative;overflow:hidden;
+}
+.hero-dark__bg-word{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  font-family:'Cormorant Garamond',serif;font-size:clamp(100px,16vw,220px);
+  font-weight:600;color:rgba(255,255,255,.03);pointer-events:none;
+  white-space:nowrap;letter-spacing:-.02em;
+}
+.hero-dark__inner{
+  display:grid;grid-template-columns:1fr 440px;
+  gap:56px;max-width:1200px;width:100%;margin:0 auto;position:relative;z-index:2;
+}
+.hero-dark__content{}
+.hero-dark__pill{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(255,175,49,.1);border:1px solid rgba(255,175,49,.3);
+  color:var(--gold);font-size:10px;font-weight:500;letter-spacing:.14em;
+  text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:24px;
+}
+.pill-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+.hero-dark__title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(34px,4.5vw,58px);font-weight:300;color:#fff;
+  line-height:1.1;margin-bottom:22px;letter-spacing:-.02em;
+}
+.hero-dark__title strong{font-weight:500;display:block;}
+.hero-dark__title em{font-style:italic;color:var(--gold);}
+.hero-dark__desc{font-size:15px;color:rgba(255,255,255,.62);line-height:1.78;margin-bottom:36px;max-width:480px;font-weight:300;}
+.hero-dark__stats{display:flex;gap:28px;flex-wrap:wrap;}
+.stat-item{display:flex;flex-direction:column;gap:4px;}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;color:var(--gold);line-height:1;}
+.stat-lbl{font-size:10px;color:rgba(255,255,255,.45);letter-spacing:.06em;}
+
+/* Card in dark hero */
+.form-card{background:#fff;border-radius:3px;padding:38px 34px;box-shadow:0 24px 64px rgba(0,0,0,.35);}
+
+/* ── WARM HERO VARIANT (for renovation) ── */
+.hero-warm{
+  margin-top:var(--nav);
+  display:grid;grid-template-columns:55% 45%;
+  min-height:calc(100vh - var(--nav));
+}
+.hero-warm__left{
+  background:#F6F1E9;padding:72px 60px;
+  display:flex;flex-direction:column;justify-content:center;
+  border-right:1px solid var(--line);position:relative;overflow:hidden;
+}
+.hero-warm__left-bg{
+  position:absolute;bottom:-60px;right:-60px;
+  font-family:'Cormorant Garamond',serif;font-size:280px;font-weight:600;
+  color:rgba(13,95,107,.04);line-height:1;pointer-events:none;letter-spacing:-.05em;
+}
+.hero-warm__right{background:var(--teal-d);padding:56px 44px;display:flex;flex-direction:column;justify-content:center;}
+.hero-warm__tag{
+  display:inline-block;background:rgba(13,95,107,.1);color:var(--teal);
+  font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  padding:6px 14px;border-radius:var(--r);margin-bottom:24px;width:fit-content;
+}
+.hero-warm__title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(34px,3.8vw,52px);font-weight:300;line-height:1.1;
+  color:var(--ink);margin-bottom:20px;letter-spacing:-.01em;
+}
+.hero-warm__title strong{font-weight:600;}
+.hero-warm__title em{font-style:italic;color:var(--teal);}
+.hero-warm__desc{font-size:15px;color:var(--ink-3);line-height:1.78;margin-bottom:28px;font-weight:300;}
+.pain-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:32px;}
+.pain-item{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--ink-2);line-height:1.6;}
+.pain-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:7px;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .cnm-nav{padding:0 24px;}
+  .hero-split{grid-template-columns:1fr;}
+  .hero-img-side{min-height:300px;}
+  .hero-form-panel{padding:36px 24px;}
+  .cnm-form__row{grid-template-columns:1fr;}
+  .hero-dark{padding:40px 24px;}
+  .hero-dark__inner{grid-template-columns:1fr;}
+  .hero-dark__bg-word{display:none;}
+  .hero-warm{grid-template-columns:1fr;}
+  .hero-warm__left{padding:44px 24px;}
+  .hero-warm__left-bg{display:none;}
+  .hero-warm__right{padding:40px 24px;}
+  .trust-item{padding:18px 20px;border-right:none;border-bottom:1px solid rgba(255,255,255,.12);}
+  .trust-item:last-child{border-bottom:none;}
+  .cnm-section{padding:56px 24px;}
+  .process-steps{grid-template-columns:1fr;gap:28px;}
+  .process-steps::before{display:none;}
+  .proj-grid--3,.proj-grid--feature{grid-template-columns:1fr;}
+  .feat-grid--4,.feat-grid--3{grid-template-columns:1fr 1fr;}
+  .cert-bar,.press-bar{padding:28px 24px;}
+  .bottom-cta{padding:56px 24px;}
+  .cnm-footer{padding:24px;flex-direction:column;text-align:center;}
+  .sticky-wa{display:flex;}
+}
+@media(max-width:520px){
+  .feat-grid--4,.feat-grid--3,.feat-grid--2{grid-template-columns:1fr;}
+  .proj-grid--2{grid-template-columns:1fr;}
+  .hero-dark__stats{gap:18px;}
+}
+</style>
+</head>
+<body>
+<nav class="cnm-nav">
+  <a href="https://www.cabinetsandme.com" class="cnm-nav__logo" target="_blank">
+    <img src="https://static.wixstatic.com/media/e3b82d_5921d7d9eaaf4f6a97e1a12b94e8847c~mv2.png/v1/fill/w_214,h_58,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cabinets-and-Me-logo-NO-Background.png" alt="Cabinets and Me">
+  </a>
+  <a href="#kitchen-form" class="cnm-nav__cta">Design My Kitchen</a>
+</nav>
+
+<section class="hero-split" id="kitchen-form">
+  <div class="hero-img-side">
+    <img src="https://static.wixstatic.com/media/e3b82d_b4d5ab7c97dd4207a98affd10b4ee7e0~mv2.jpg/v1/fill/w_800,h_1200,al_c,q_85,enc_avif,quality_auto/Minimal%20Premium%20Grey%20Kitchen%20-%20Project%2078%20Beverly%20Hills%20Bengaluru%20by%20Cabinets%20and%20Me.jpg" alt="78 Beverly Hills Kitchen by Cabinets and Me" loading="eager">
+    <div class="hero-img-overlay"></div>
+    <div class="hero-img-caption">
+      <div class="hero-img-caption__tag">Bespoke Kitchen — 78 Beverly Hills</div>
+      <div class="hero-img-caption__name">Handleless profiles · Stone countertop · Integrated appliances</div>
+      <div class="hero-img-caption__type">Designed & Built in-house, Bengaluru</div>
+    </div>
+  </div>
+
+  <div class="hero-form-panel">
+    <div class="hero-form-panel__eyebrow">Bespoke Kitchen Specialists</div>
+    <h1 class="hero-form-panel__headline">Your Kitchen Should Be the Most Considered Room<br><em>in Your Home.</em></h1>
+    <p class="hero-form-panel__sub">A luxury villa deserves a kitchen designed for it — not selected from a catalogue. Every drawer, surface and profile crafted around your brief.</p>
+
+    <form class="cnm-form" id="leadForm" novalidate>
+      <div class="cnm-form__row">
+        <div class="cnm-form__group">
+  <label class="cnm-form__label">Full Name</label>
+  <input class="cnm-form__input" type="text" name="name" placeholder="Your full name" data-validate="name" autocomplete="name" required>
+  <div class="cnm-form__error" role="alert">
+  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="#dc2626"/><path d="M6 3.5v3M6 8.5v.5" stroke="#dc2626" stroke-width="1.2" stroke-linecap="round"/></svg>
+  <span></span>
+</div>
+</div>
+        <div class="cnm-form__group">
+  <label class="cnm-form__label">Mobile Number</label>
+  <div class="phone-wrap">
+    <span class="phone-prefix">+91</span>
+    <input class="cnm-form__input" type="tel" name="phone" placeholder="9876543210" data-validate="phone" autocomplete="tel" maxlength="10" inputmode="numeric" required>
+  </div>
+  <div class="cnm-form__error" role="alert">
+  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="#dc2626"/><path d="M6 3.5v3M6 8.5v.5" stroke="#dc2626" stroke-width="1.2" stroke-linecap="round"/></svg>
+  <span></span>
+</div>
+</div>
+      </div>
+      <div class="cnm-form__group">
+  <label class="cnm-form__label">Villa Location</label>
+  <select class="cnm-form__select" name="location" data-validate="select" required>
+    <option value="" disabled selected>Select your area</option>
+    <option>Whitefield</option>
+    <option>Sarjapur Road</option>
+    <option>Kanakapura Road</option>
+    <option>Hebbal / Yelahanka</option>
+    <option>JP Nagar / Bannerghatta</option>
+    <option>Electronic City</option>
+    <option>Koramangala / Indiranagar</option>
+    <option>Other Bengaluru</option>
+    <option>Outside Bengaluru</option>
+  </select>
+  <div class="cnm-form__error" role="alert">
+  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="#dc2626"/><path d="M6 3.5v3M6 8.5v.5" stroke="#dc2626" stroke-width="1.2" stroke-linecap="round"/></svg>
+  <span></span>
+</div>
+</div>
+      <div class="cnm-form__group">
+        <label class="cnm-form__label">Kitchen Layout Preference</label>
+        <select class="cnm-form__select" name="layout" data-validate="select" required>
+          <option value="" disabled selected>Select layout</option>
+          <option>Open Kitchen</option>
+          <option>Island Kitchen</option>
+          <option>L-Shaped Kitchen</option>
+          <option>U-Shaped Kitchen</option>
+          <option>Not Sure Yet</option>
+        </select>
+        <div class="cnm-form__error" role="alert">
+  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="#dc2626"/><path d="M6 3.5v3M6 8.5v.5" stroke="#dc2626" stroke-width="1.2" stroke-linecap="round"/></svg>
+  <span></span>
+</div>
+      </div>
+      <div class="cnm-form__group">
+        <label class="cnm-form__label">Approximate Budget</label>
+        <select class="cnm-form__select" name="budget" data-validate="select" required>
+          <option value="" disabled selected>Select your range</option>
+          <option>₹8L – ₹15L</option>
+          <option>₹15L – ₹30L</option>
+          <option>₹30L+</option>
+          <option>Quality is the priority</option>
+        </select>
+        <div class="cnm-form__error" role="alert">
+  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="#dc2626"/><path d="M6 3.5v3M6 8.5v.5" stroke="#dc2626" stroke-width="1.2" stroke-linecap="round"/></svg>
+  <span></span>
+</div>
+      </div>
+      <button type="submit" class="cnm-form__submit">
+        <span class="btn-text">Design My Kitchen</span>
+        <div class="spinner"></div>
+      </button>
+      <div class="form-or"><span>or reach us directly</span></div>
+      <a href="https://wa.me/919731100913?text=Hi%2C%20I%20am%20looking%20to%20design%20a%20bespoke%20kitchen%20for%20my%20villa%20in%20Bengaluru%20and%20would%20like%20to%20speak%20with%20a%20kitchen%20design%20consultant." class="cnm-wa-btn" target="_blank" rel="noopener">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  Continue on WhatsApp
+</a>
+      <p class="form-note">Shared only with our design team. No spam, ever.</p>
+    </form>
+    <div class="form-success" id="formSuccess">
+  <div class="success-ring">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0D5F6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+  </div>
+  <div class="success-title">Thank You</div>
+  <p class="success-sub">A design consultant — not a sales executive — will call you within 24 hours. We look forward to hearing about your vision.</p>
+</div>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-item"><span class="trust-num">30+</span><span class="trust-lbl">Villa projects delivered</span></div>
+  <div class="trust-item"><span class="trust-num">100%</span><span class="trust-lbl">In-house manufacturing</span></div>
+  <div class="trust-item"><span class="trust-num">10–14</span><span class="trust-lbl">Week avg. completion</span></div>
+  <div class="trust-item"><span class="trust-num">5</span><span class="trust-lbl">International certifications</span></div>
+</div>
+
+<div style="background:#fff;">
+  <div class="cnm-section">
+    <div class="section-eye">The Cabinets & Me Difference</div>
+    <h2 class="section-title">Not a Kitchen. A Brief Made Real.</h2>
+    <div class="feat-grid feat-grid--4" style="margin-top:44px;">
+      <div class="feat-card"><svg class="feat-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="32" height="24" rx="1"/><path d="M4 16h32M12 8v8M28 8v8"/></svg><div class="feat-card__title">Handleless Profiles</div><div class="feat-card__desc">Clean, sculptural cabinet fronts with precision-engineered grip channels. The hallmark of a kitchen designed by an architect, not a catalogue.</div></div>
+      <div class="feat-card"><svg class="feat-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="6" width="28" height="28" rx="2"/><path d="M6 18h28M18 6v28"/></svg><div class="feat-card__title">Stone Countertops</div><div class="feat-card__desc">Engineered quartz, natural stone or Dekton surfaces — sourced, templated and installed by our team. No subcontractors, no mismatched seams.</div></div>
+      <div class="feat-card"><svg class="feat-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="20" r="12"/><path d="M20 10v10l6 4"/></svg><div class="feat-card__title">Hettich Mechanisms</div><div class="feat-card__desc">Soft-close hinges, servo-drive systems and Hettich InnoTech drawers. The same hardware used by Europe's finest kitchen manufacturers.</div></div>
+      <div class="feat-card"><svg class="feat-card__icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 32V14l12-6 12 6v18"/><path d="M16 32V24h8v8"/></svg><div class="feat-card__title">Integrated Appliances</div><div class="feat-card__desc">Oven, microwave, dishwasher, fridge — integrated flush into cabinetry. The kitchen looks complete because everything belongs, nothing is placed.</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="background:var(--off);">
+  <div class="cnm-section">
+    <div class="section-eye">Kitchen Projects</div>
+    <h2 class="section-title">Kitchens We've Crafted Across Bengaluru's Finest Villas</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:40px;">
+      <div style="display:flex;flex-direction:column;gap:3px;">
+        <div class="proj-card" style="aspect-ratio:4/5;">
+          <img src="https://static.wixstatic.com/media/e3b82d_6de519fbe4f24015a5b7d0a36c3d1990~mv2.jpg/v1/fill/w_800,h_1200,al_c,q_85,enc_avif,quality_auto/Bespoke%20minimal%20grey%20and%20wood%20Indian%20Kitchen%20-%20Project%2078%20Beverly%20Hills%20Bengaluru%20by%20Cabin.jpg" alt="78 Beverly Hills Kitchen" loading="lazy">
+          <div class="proj-info"><div class="proj-info__name">78 Beverly Hills</div><div class="proj-info__type">Island Kitchen — Full Redesign</div></div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:3px;">
+        <div class="proj-card" style="flex:1;min-height:240px;">
+          <img src="https://static.wixstatic.com/media/e3b82d_d2f6a19966d54d2ca1a7e64b20717b62~mv2.jpeg/v1/fill/w_800,h_1200,al_c,q_85,enc_avif,quality_auto/Minimalist%20Modern%20Grey%20Kitchen%20by%20Cabinets%20and%20Me%20Bengaluru%20-%20Project%20Evantha%20Aristi%20Benga.jpeg" alt="Evantha Aristi Kitchen" loading="lazy">
+          <div class="proj-info"><div class="proj-info__name">Evantha Aristi</div><div class="proj-info__type">Open Kitchen with Island</div></div>
+        </div>
+        <div class="proj-card" style="flex:1;min-height:240px;">
+          <img src="https://static.wixstatic.com/media/e3b82d_5deb0ba8fe76492ba26233b544e812b5~mv2.jpg/v1/fill/w_1200,h_800,al_c,q_85,enc_avif,quality_auto/01-Premium%20Kitchen%20Design%20and%20Installation%20at%20Nambiar%20Bellezea%20Residence%20in%20Bommasandra%20Be.jpg" alt="Nambiar Bellezea Kitchen" loading="lazy">
+          <div class="proj-info"><div class="proj-info__name">Nambiar Bellezea</div><div class="proj-info__type">Premium Modular Kitchen</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="background:var(--teal-d);padding:80px 48px;">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+    <div>
+      <div class="section-eye" style="color:rgba(255,175,49,.8);">Materials</div>
+      <h2 class="section-title" style="color:#fff;margin-bottom:16px;">Chosen for Your Brief, <em style="font-style:italic;color:var(--gold);">Not a Catalogue.</em></h2>
+      <div style="display:flex;flex-direction:column;gap:12px;margin-top:20px;">
+        <div style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.7);"><span style="width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:7px;"></span>FSC-certified carcass materials — environmentally responsible, structurally superior</div><div style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.7);"><span style="width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:7px;"></span>German-manufactured cabinet fronts with precision tolerances under 0.1mm</div><div style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.7);"><span style="width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:7px;"></span>Hettich InnoTech drawers and Häfele connector systems throughout</div><div style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.7);"><span style="width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:7px;"></span>Stone, quartz and Dekton countertop options — templated and installed in-house</div><div style="display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,.7);"><span style="width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:7px;"></span>Custom task lighting and under-cabinet LED integration available</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div style="padding:20px 22px;border:1px solid rgba(255,255,255,.12);border-radius:2px;background:rgba(255,255,255,.04);"><div style="font-family:Cormorant Garamond,serif;font-size:18px;font-weight:500;color:#fff;margin-bottom:4px;">LGA Certified</div><div style="font-size:12px;color:rgba(255,255,255,.5);line-height:1.6;">Verifies formaldehyde standards and structural integrity of our board materials.</div></div><div style="padding:20px 22px;border:1px solid rgba(255,255,255,.12);border-radius:2px;background:rgba(255,255,255,.04);"><div style="font-family:Cormorant Garamond,serif;font-size:18px;font-weight:500;color:#fff;margin-bottom:4px;">CATAS Certified</div><div style="font-size:12px;color:rgba(255,255,255,.5);line-height:1.6;">Italy's premier furniture testing institute — verifies durability and finish quality.</div></div><div style="padding:20px 22px;border:1px solid rgba(255,255,255,.12);border-radius:2px;background:rgba(255,255,255,.04);"><div style="font-family:Cormorant Garamond,serif;font-size:18px;font-weight:500;color:#fff;margin-bottom:4px;">FSC Certified</div><div style="font-size:12px;color:rgba(255,255,255,.5);line-height:1.6;">Confirms our wood-based materials are responsibly sourced and ethically produced.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="press-bar">
+  <div class="press-bar__inner">
+    <span class="press-bar__lbl">As Seen In</span>
+    <div class="press-bar__logos">
+      <img src="https://static.wixstatic.com/media/e3b82d_df21aae2eef1460bb8139a926491ba19~mv2.png/v1/fill/w_120,h_74,al_c,q_85,enc_avif,quality_auto/ArchDaily-logo.png" alt="ArchDaily" loading="lazy">
+      <img src="https://static.wixstatic.com/media/e3b82d_2c40d9eac92a499cab1d1634d8ede028~mv2.png/v1/fill/w_182,h_62,al_c,q_85,enc_avif,quality_auto/Cabinets_and_Me_Bengaluru_-_Featured_on_The_Architects_Diary_Magazine-removebg-preview.png" alt="The Architects Diary" loading="lazy">
+      <img src="https://static.wixstatic.com/media/e3b82d_09bcd494bd7d4a45907a884e4fe4277e~mv2.png/v1/fill/w_160,h_36,al_c,q_85,enc_avif,quality_auto/Buildofy-logo.png" alt="Buildofy" loading="lazy">
+      <img src="https://static.wixstatic.com/media/e3b82d_158f2bf4aef5498e9982d8af4b8f2966~mv2.png/v1/fill/w_90,h_90,al_c,q_85,enc_avif,quality_auto/Featured-on-BI.png" alt="Building & Interiors" loading="lazy">
+      <img src="https://static.wixstatic.com/media/e3b82d_cf7b491b4d8a4d8daa8981754d3ffd80~mv2.png/v1/fill/w_148,h_72,al_c,q_85,enc_avif,quality_auto/Featured-on-LoveThatDesign.png" alt="Love That Design" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<div class="bottom-cta">
+  <h2 class="bottom-cta__title">Your villa has the space.<br><em>Let's design the kitchen it deserves.</em></h2>
+  <p class="bottom-cta__sub">Book a complimentary kitchen design consultation. We'll visit your space and show you what a truly bespoke kitchen looks like.</p>
+  <div class="bottom-cta__actions">
+    <a href="#kitchen-form" class="btn-gold">Design My Kitchen</a>
+    <a href="https://wa.me/919731100913?text=Hi%2C%20I%20would%20like%20to%20discuss%20a%20bespoke%20kitchen%20for%20my%20villa." class="btn-ghost" target="_blank">Chat on WhatsApp</a>
+  </div>
+</div>
+
+<footer class="cnm-footer">
+  <div class="cnm-footer__brand"><img src="https://static.wixstatic.com/media/e3b82d_5921d7d9eaaf4f6a97e1a12b94e8847c~mv2.png/v1/fill/w_214,h_58,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Cabinets-and-Me-logo-NO-Background.png" alt="Cabinets and Me"></div>
+  <div class="cnm-footer__addr">No. 131, 7th Main Road, 4th Block, Jayanagar, Bengaluru 560011</div>
+  <div class="cnm-footer__phone">+91 97311 00913</div>
+</footer>
+<a href="https://wa.me/919731100913?text=Hi%2C%20I%20would%20like%20to%20discuss%20a%20bespoke%20kitchen%20for%20my%20villa%20in%20Bengaluru." class="sticky-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+(function(){
+  // ── Validation helpers ──────────────────────────────────────
+  function showErr(field, msg){
+    field.classList.add('error');
+    var errEl = field.parentElement.querySelector('.cnm-form__error');
+    if(!errEl){ errEl = field.closest('.cnm-form__group').querySelector('.cnm-form__error'); }
+    if(errEl){ errEl.querySelector('span').textContent = msg; errEl.classList.add('show'); }
+  }
+  function clearErr(field){
+    field.classList.remove('error');
+    var errEl = field.parentElement.querySelector('.cnm-form__error');
+    if(!errEl){ errEl = field.closest('.cnm-form__group').querySelector('.cnm-form__error'); }
+    if(errEl){ errEl.classList.remove('show'); }
+  }
+  function validateName(v){ return v.trim().length >= 2; }
+  function validatePhone(v){
+    var d = v.replace(/\D/g,'');
+    return d.length === 10 && /^[6-9]/.test(d);
+  }
+  function validateEmail(v){
+    return !v || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+  }
+  function validateSelect(v){ return v && v !== ''; }
+
+  // ── Live validation ─────────────────────────────────────────
+  document.querySelectorAll('.cnm-form__input,.cnm-form__select').forEach(function(el){
+    ['blur','change'].forEach(function(evt){
+      el.addEventListener(evt, function(){ validateField(el); });
+    });
+    el.addEventListener('input', function(){
+      if(el.classList.contains('error')) validateField(el);
+    });
+  });
+
+  function validateField(el){
+    var v = el.value.trim();
+    if(el.dataset.validate === 'name'){
+      if(!validateName(v)) showErr(el,'Please enter your full name (min. 2 characters)');
+      else clearErr(el);
+    } else if(el.dataset.validate === 'phone'){
+      if(!validatePhone(v)) showErr(el,'Enter a valid 10-digit Indian mobile number');
+      else clearErr(el);
+    } else if(el.dataset.validate === 'email'){
+      if(!validateEmail(v)) showErr(el,'Enter a valid email address');
+      else clearErr(el);
+    } else if(el.dataset.validate === 'select'){
+      if(!validateSelect(v)) showErr(el,'Please make a selection');
+      else clearErr(el);
+    }
+    return !el.classList.contains('error');
+  }
+
+  // ── Form submit ─────────────────────────────────────────────
+  var forms = document.querySelectorAll('.cnm-form');
+  forms.forEach(function(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var fields = form.querySelectorAll('[data-validate]');
+      var valid = true;
+      fields.forEach(function(f){
+        if(!validateField(f)) valid = false;
+      });
+      if(!valid) return;
+
+      // Disable & show spinner
+      var btn = form.querySelector('.cnm-form__submit');
+      btn.disabled = true;
+      btn.classList.add('loading');
+
+      // Fire tracking pixels
+      setTimeout(function(){
+        if(typeof fbq!=='undefined') fbq('track','Lead');
+        if(typeof gtag!=='undefined') gtag('event','generate_lead');
+        // Show success
+        form.style.display = 'none';
+        var succ = document.getElementById('formSuccess');
+        if(succ){ succ.classList.add('show'); succ.scrollIntoView({behavior:'smooth',block:'center'}); }
+      }, 900);
+    });
+  });
+
+  // ── Smooth anchor CTAs ─────────────────────────────────────
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
